@@ -18,27 +18,35 @@ public class Calculator {
 		history = "0";
 	}
 	
-	//return current total
+	/*
+	 * getTotal will return current total
+	 */
 	public int getTotal () 
 	{
 		return total;
 	}
 	
-	//add the parameter to the total variable
+	/*
+	 * add function will add the parameter to the total variable
+	 */
 	public void add (int value) 
 	{
 		total = total + value;
 		history += ("+ " + value);
 	}
 	
-	//subtract the parameter from the total variable
+	/*
+	 * The subtract function will subtract the parameter from the total variable
+	 */
 	public void subtract (int value) 
 	{
 		total = total - value;
 		history += ("- " + value);
 	}
 	
-	//multiply the total by the parameter
+	/*
+	 * The multiply function will multiply the total by the parameter
+	 */
 	public void multiply (int value) 
 	{
 		total = total * value;
@@ -59,7 +67,9 @@ public class Calculator {
 
 	}
 	
-	//return a history of all actions as a String
+	/*
+	 * The getHistory function will return a history of all actions as a String
+	 */
 	public String getHistory () 
 	{
 		return history.toString();
